@@ -20,27 +20,22 @@
         <property id="4265851951061755418" name="name" index="14gzY_" />
       </concept>
       <concept id="4265851951061755497" name="Pygram.structure.Diagram" flags="ng" index="14gzZm">
-        <property id="4265851951061755512" name="show" index="14gzZ7" />
         <property id="4265851951061755503" name="filename" index="14gzZg" />
         <property id="4265851951061755500" name="format" index="14gzZj" />
         <property id="4265851951061755498" name="title" index="14gzZl" />
-        <child id="4265851951061755507" name="nodes" index="14gzZc" />
+        <child id="4265851951061755507" name="edges" index="14gzZc" />
+      </concept>
+      <concept id="4265851951061755480" name="Pygram.structure.Edge" flags="ng" index="14gzZB">
+        <property id="4265851951061755486" name="style" index="14gzZx" />
+        <property id="4265851951061755483" name="color" index="14gzZ$" />
+        <property id="4265851951061755481" name="label" index="14gzZA" />
+        <child id="5337137212942017373" name="originNode" index="34Z35p" />
       </concept>
       <concept id="4265851951061790857" name="Pygram.structure.ProviderList" flags="ng" index="14gE$Q">
         <child id="4265851951061790858" name="providers" index="14gE$P" />
       </concept>
     </language>
   </registry>
-  <node concept="14gzZm" id="3GNmrXZsuNW">
-    <property role="14gzZg" value="Diag" />
-    <property role="14gzZl" value="my diagram" />
-    <property role="14gzZj" value="jpg" />
-    <property role="14gzZ7" value="true" />
-    <node concept="14gzYJ" id="3GNmrXZsuNX" role="14gzZc">
-      <property role="14gzY_" value="redshift" />
-    </node>
-    <node concept="14gzYJ" id="3GNmrXZsuNZ" role="14gzZc" />
-  </node>
   <node concept="14gE$Q" id="3GNmrXZsAq4">
     <node concept="14gzYx" id="6XHasnyMm48" role="14gE$P">
       <property role="14g5Z8" value="OnPrem" />
@@ -654,6 +649,45 @@
     <node concept="14gzYx" id="6XHasnyMm2o" role="14gE$P">
       <property role="14g5Z8" value="SaaS" />
       <property role="14gzY6" value="Software as a Service" />
+    </node>
+  </node>
+  <node concept="14gE$Q" id="1o7FO314DQF">
+    <node concept="14gzYx" id="1o7FO314DQG" role="14gE$P">
+      <property role="14g5Z8" value="AWS" />
+      <property role="14gzY6" value="sadmsalkmdslakdm" />
+      <node concept="14gzY4" id="1o7FO314DQI" role="2dDfed">
+        <property role="14gzY1" value="saldkmsalkdm" />
+        <node concept="14gzYJ" id="1o7FO314DQK" role="14gzZZ">
+          <property role="14gzY_" value="saldkmaslkd" />
+        </node>
+        <node concept="14gzYJ" id="1o7FO314DQS" role="14gzZZ">
+          <property role="14gzY_" value="sadslakmd" />
+        </node>
+        <node concept="14gzYJ" id="1o7FO314DQV" role="14gzZZ" />
+        <node concept="14gzYJ" id="1o7FO314DQZ" role="14gzZZ">
+          <property role="14gzY_" value="saldkmsalkdml" />
+        </node>
+        <node concept="14gzYJ" id="1o7FO314DR4" role="14gzZZ" />
+        <node concept="14gzYJ" id="1o7FO314DRa" role="14gzZZ" />
+      </node>
+      <node concept="14gzY4" id="1o7FO314DQM" role="2dDfed">
+        <node concept="14gzYJ" id="1o7FO314DQQ" role="14gzZZ">
+          <property role="14gzY_" value="sadkmlkm" />
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="14gzZm" id="1o7FO314DRh">
+    <property role="14gzZl" value="Diag" />
+    <property role="14gzZg" value="monDiagramme" />
+    <property role="14gzZj" value="tf" />
+    <node concept="14gzZB" id="1o7FO314DRy" role="14gzZc">
+      <property role="14gzZA" value="test" />
+      <property role="14gzZ$" value="test" />
+      <property role="14gzZx" value="test" />
+      <node concept="14gzYJ" id="1o7FO314DRz" role="34Z35p">
+        <property role="14gzY_" value="test" />
+      </node>
     </node>
   </node>
 </model>

@@ -71,7 +71,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.origin("r:66d604ed-fb50-48df-ab7b-ae2ba1575adb(Pygram.structure)/4265851951061755492");
     b.version(2);
     b.property("name", 0x3b3359bf7f716667L).type(PrimitiveTypeId.STRING).origin("4265851951061755495").done();
-    b.aggregate("nodes", 0x3b3359bf7f716665L).target(0x1882bc4a84224af4L, 0xa4e0177f578ae42eL, 0x3b3359bf7f716610L).optional(true).ordered(true).multiple(true).origin("4265851951061755493").done();
+    b.aggregate("edges", 0x3b3359bf7f716665L).target(0x1882bc4a84224af4L, 0xa4e0177f578ae42eL, 0x3b3359bf7f716658L).optional(true).ordered(true).multiple(true).origin("4265851951061755493").done();
     b.alias("Cluster");
     return b.create();
   }
@@ -84,7 +84,10 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.property("filename", 0x3b3359bf7f71666fL).type(PrimitiveTypeId.STRING).origin("4265851951061755503").done();
     b.property("format", 0x3b3359bf7f71666cL).type(PrimitiveTypeId.STRING).origin("4265851951061755500").done();
     b.property("show", 0x3b3359bf7f716678L).type(PrimitiveTypeId.BOOLEAN).origin("4265851951061755512").done();
-    b.aggregate("nodes", 0x3b3359bf7f716673L).target(0x1882bc4a84224af4L, 0xa4e0177f578ae42eL, 0x3b3359bf7f716610L).optional(true).ordered(true).multiple(true).origin("4265851951061755507").done();
+    b.property("provider", 0x61c8bd6f54885c7fL).type(PrimitiveTypeId.STRING).origin("7046089902878383231").done();
+    b.property("providerSource", 0x61c8bd6f54886ffdL).type(PrimitiveTypeId.STRING).origin("7046089902878388221").done();
+    b.property("providerVersion", 0x61c8bd6f54887004L).type(PrimitiveTypeId.INTEGER).origin("7046089902878388228").done();
+    b.aggregate("edges", 0x3b3359bf7f716673L).target(0x1882bc4a84224af4L, 0xa4e0177f578ae42eL, 0x3b3359bf7f716658L).optional(true).ordered(true).multiple(true).origin("4265851951061755507").done();
     b.aggregate("clusters", 0x3b3359bf7f716675L).target(0x1882bc4a84224af4L, 0xa4e0177f578ae42eL, 0x3b3359bf7f716664L).optional(true).ordered(true).multiple(true).origin("4265851951061755509").done();
     b.alias("Diagram");
     return b.create();
@@ -97,6 +100,8 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.property("label", 0x3b3359bf7f716659L).type(PrimitiveTypeId.STRING).origin("4265851951061755481").done();
     b.property("color", 0x3b3359bf7f71665bL).type(PrimitiveTypeId.STRING).origin("4265851951061755483").done();
     b.property("style", 0x3b3359bf7f71665eL).type(PrimitiveTypeId.STRING).origin("4265851951061755486").done();
+    b.aggregate("originNode", 0x4a1152048eed635dL).target(0x1882bc4a84224af4L, 0xa4e0177f578ae42eL, 0x3b3359bf7f716610L).optional(false).ordered(true).multiple(false).origin("5337137212942017373").done();
+    b.aggregate("targetNodes", 0x4a1152048eed635fL).target(0x1882bc4a84224af4L, 0xa4e0177f578ae42eL, 0x3b3359bf7f716610L).optional(true).ordered(true).multiple(true).origin("5337137212942017375").done();
     b.alias("Edge");
     return b.create();
   }

@@ -47,7 +47,7 @@
     <property role="TrG5h" value="Node" />
     <property role="R4oN_" value="Node is an abstract concept that represents a single system component object" />
     <property role="34LRSv" value="Node" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyi" id="3GNmrXZsmoq" role="1TKVEl">
       <property role="IQ2nx" value="4265851951061755418" />
       <property role="TrG5h" value="name" />
@@ -60,7 +60,7 @@
     <property role="34LRSv" value="Provider" />
     <property role="R4oN_" value="Provider represents the entity or technology that provides cloud services" />
     <property role="3GE5qa" value="provider" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyi" id="3GNmrXZsmoT" role="1TKVEl">
       <property role="IQ2nx" value="4265851951061755449" />
       <property role="TrG5h" value="fullname" />
@@ -85,7 +85,7 @@
     <property role="34LRSv" value="ResourceType" />
     <property role="R4oN_" value="Resource types are the category in which the individual services fall into" />
     <property role="3GE5qa" value="" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyi" id="3GNmrXZsmoY" role="1TKVEl">
       <property role="IQ2nx" value="4265851951061755454" />
       <property role="TrG5h" value="type" />
@@ -104,7 +104,21 @@
     <property role="TrG5h" value="Edge" />
     <property role="34LRSv" value="Edge" />
     <property role="R4oN_" value="Edge is an object representing a connection between Nodes with some additional properties" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyj" id="4ChkwieVmdt" role="1TKVEi">
+      <property role="IQ2ns" value="5337137212942017373" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="originNode" />
+      <property role="20lbJX" value="fLJekj4/_1" />
+      <ref role="20lvS9" node="3GNmrXZsmog" resolve="Node" />
+    </node>
+    <node concept="1TJgyj" id="4ChkwieVmdv" role="1TKVEi">
+      <property role="IQ2ns" value="5337137212942017375" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="targetNodes" />
+      <property role="20lbJX" value="fLJekj5/_0__n" />
+      <ref role="20lvS9" node="3GNmrXZsmog" resolve="Node" />
+    </node>
     <node concept="1TJgyi" id="3GNmrXZsmpp" role="1TKVEl">
       <property role="IQ2nx" value="4265851951061755481" />
       <property role="TrG5h" value="label" />
@@ -126,13 +140,13 @@
     <property role="TrG5h" value="Cluster" />
     <property role="34LRSv" value="Cluster" />
     <property role="R4oN_" value="Cluster allows you to join the nodes in an isolated group" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="3GNmrXZsmp_" role="1TKVEi">
       <property role="IQ2ns" value="4265851951061755493" />
       <property role="20lmBu" value="fLJjDmT/aggregation" />
-      <property role="20kJfa" value="nodes" />
+      <property role="20kJfa" value="edges" />
       <property role="20lbJX" value="fLJekj5/_0__n" />
-      <ref role="20lvS9" node="3GNmrXZsmog" resolve="Node" />
+      <ref role="20lvS9" node="3GNmrXZsmpo" resolve="Edge" />
     </node>
     <node concept="1TJgyi" id="3GNmrXZsmpB" role="1TKVEl">
       <property role="IQ2nx" value="4265851951061755495" />
@@ -146,7 +160,7 @@
     <property role="34LRSv" value="Diagram" />
     <property role="19KtqR" value="true" />
     <property role="R4oN_" value="Diagram represents a global diagram context" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyi" id="3GNmrXZsmpE" role="1TKVEl">
       <property role="IQ2nx" value="4265851951061755498" />
       <property role="TrG5h" value="title" />
@@ -167,12 +181,27 @@
       <property role="TrG5h" value="show" />
       <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
     </node>
+    <node concept="1TJgyi" id="678JmXky5LZ" role="1TKVEl">
+      <property role="IQ2nx" value="7046089902878383231" />
+      <property role="TrG5h" value="provider" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
+    <node concept="1TJgyi" id="678JmXky6ZX" role="1TKVEl">
+      <property role="IQ2nx" value="7046089902878388221" />
+      <property role="TrG5h" value="providerSource" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
+    <node concept="1TJgyi" id="678JmXky704" role="1TKVEl">
+      <property role="IQ2nx" value="7046089902878388228" />
+      <property role="TrG5h" value="providerVersion" />
+      <ref role="AX2Wp" to="tpck:fKAQMTA" resolve="integer" />
+    </node>
     <node concept="1TJgyj" id="3GNmrXZsmpN" role="1TKVEi">
       <property role="IQ2ns" value="4265851951061755507" />
       <property role="20lmBu" value="fLJjDmT/aggregation" />
-      <property role="20kJfa" value="nodes" />
+      <property role="20kJfa" value="edges" />
       <property role="20lbJX" value="fLJekj5/_0__n" />
-      <ref role="20lvS9" node="3GNmrXZsmog" resolve="Node" />
+      <ref role="20lvS9" node="3GNmrXZsmpo" resolve="Edge" />
     </node>
     <node concept="1TJgyj" id="3GNmrXZsmpP" role="1TKVEi">
       <property role="IQ2ns" value="4265851951061755509" />
@@ -189,7 +218,7 @@
     <property role="34LRSv" value="Provider List" />
     <property role="R4oN_" value="List containing all supported providers" />
     <property role="19KtqR" value="true" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="3GNmrXZsv2a" role="1TKVEi">
       <property role="IQ2ns" value="4265851951061790858" />
       <property role="20lmBu" value="fLJjDmT/aggregation" />

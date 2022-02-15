@@ -178,6 +178,8 @@ import org.jetbrains.mps.openapi.language.SConcept;
     style.set(StyleAttributes.INDENT_LAYOUT_ON_NEW_LINE, true);
     style.set(StyleAttributes.INDENT_LAYOUT_INDENT, true);
     editorCell.getStyle().putAll(style);
+    editorCell.setFoldable(true);
+    editorCell.setFoldedCell(createConstant_3());
     editorCell.setSRole(handler.getElementSRole());
     return editorCell;
   }
@@ -247,6 +249,12 @@ import org.jetbrains.mps.openapi.language.SConcept;
         }
       }
     }
+  }
+  private EditorCell createConstant_3() {
+    EditorCell_Constant editorCell = new EditorCell_Constant(getEditorContext(), myNode, "See More...");
+    editorCell.setCellId("Constant_z1x6t9_a5a");
+    editorCell.setDefaultText("");
+    return editorCell;
   }
   private EditorCell createIndentCell_0() {
     EditorCell_Indent editorCell = new EditorCell_Indent(getEditorContext(), myNode);
